@@ -1,5 +1,12 @@
 {
   "name": "edmondscommerce/behat-framework",
+  "description": "Initial bhat framework",
+  "keywords": [
+    "Behat",
+    "Testing",
+    "Data",
+    "Browser Testing"
+  ],
   "require": {
     "behat/behat": "dev-master",
     "behat/mink": "~1.6",
