@@ -1,4 +1,5 @@
 {
+  "name": "edmondscommerce/behat-framework",
   "require": {
     "behat/behat": "dev-master",
     "behat/mink": "~1.6",
