@@ -16,9 +16,6 @@
         "fabpot/goutte": "1.0.7",
         "edmondscommerce/selenium-server": "1.0.4"
     },
-    "config": {
-        "bin-dir": "bin/"
-    },
     "bin": [
         "bin/behat_all.bash",
         "bin/behat_desktop.bash",
