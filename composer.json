@@ -21,5 +21,8 @@
         "bin/behat_desktop.bash",
         "bin/behat_mobile.bash",
         "bin/behat_tablet.bash"
-    ]
+    ],
+    "config": {
+        "bin-dir": "./bin"
+    }
 }
