@@ -41,13 +41,12 @@ Running Behat Scenarios on Desktop
 
 
 "
-rm -rf $DIR/../cache/*;
-rm -rf $DIR/../disk-cache/*;
+
 if [[ "" == "$@" ]]
 then
-    bin/behat  --format pretty --out std --format junit --out behat_results/desktop/$(hostname) -p chrome --tags=desktop
+    ./behat  --format pretty --out std --format junit --out behat_results/desktop/$(hostname) -p chrome --tags=desktop
 else
-    bin/behat  --format pretty --out std  -p chrome --tags=desktop "$@"
+    ./behat  --format pretty --out std  -p chrome --tags=desktop "$@"
 
 fi
 echo "

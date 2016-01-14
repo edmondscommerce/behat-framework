@@ -44,14 +44,12 @@ II???+7I?????            7I?I?................................II?IIII.,:~~::,,..
 
 
 "
-rm -rf $DIR/../cache/*;
-rm -rf $DIR/../disk-cache/*;
 
 if [[ "" == "$@" ]]
 then
-  bin/behat  --format pretty --out std --format junit --out behat_results/tablet/$(hostname) -p chrome_nexus10 --tags=tablet
+  ./behat  --format pretty --out std --format junit --out behat_results/tablet/$(hostname) -p chrome_nexus10 --tags=tablet
 else
-  bin/behat  --format pretty --out std -p chrome_nexus10 --tags=tablet "$@"
+  ./behat  --format pretty --out std -p chrome_nexus10 --tags=tablet "$@"
 fi
 echo "
 

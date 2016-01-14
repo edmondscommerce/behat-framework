@@ -61,14 +61,13 @@ Running Behat Scenarios on Mobile
 
 
 "
-rm -rf $DIR/../cache/*;
-rm -rf $DIR/../disk-cache/*;
+
 
 if [[ "" == "$@" ]]
 then
-    bin/behat   --format pretty --out std --format junit --out behat_results/mobile/$(hostname) -p chrome_nexus5 --tags=mobile
+    ./behat   --format pretty --out std --format junit --out behat_results/mobile/$(hostname) -p chrome_nexus5 --tags=mobile
 else
-    bin/behat   --format pretty --out std -p chrome_nexus5 --tags=mobile "$@"
+    ./behat   --format pretty --out std -p chrome_nexus5 --tags=mobile "$@"
 fi
 echo "
 
