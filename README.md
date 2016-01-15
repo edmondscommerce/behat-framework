@@ -5,7 +5,24 @@ An easy to get up and running Behat 3 testing framework that includes chrome bas
 
 ### Installation (Composer)
 
+####Template composer.json (copy paste)
+    {
+        "require": {
+            "edmondscommerce/behat-framework": "~1.1",
+            "edmondscommerce/behat-faker-context": "~1.1",
+            "edmondscommerce/behat-chrome-performance-context": "~1.1",
+            "edmondscommerce/behat-error-detection-context": "~1.1",
+            "edmondscommerce/behat-error-handling-context": "~1.1"
+        },
+        "config": {
+            "bin-dir": "bin/"
+        }
+    }
+
+
+####Manual Composer
 Set the bin dir in your composer.json
+    
     "config": {
         "bin-dir": "bin/"
     }
