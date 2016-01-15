@@ -16,6 +16,12 @@
         "fabpot/goutte": "1.0.7",
         "edmondscommerce/selenium-server": "1.0.4"
     },
+    "suggest": {
+        "edmondscommerce/behat-faker-context": "Parent framework, allows easier behat setup",
+        "edmondscommerce/behat-error-handling-context": "Provides utilities to pause on error and to take screenshots at time of error",
+        "edmondscommerce/behat-error-detection-context": "Detect various types of errors, including PHP fatal errors and W3C validation issues",
+        "edmondscommerce/behat-chrome-performance-context": "Measure various performance settings from Chrome (i.e ttfb)"
+    },
     "bin": [
         "bin/behat_all.bash",
         "bin/behat_desktop.bash",

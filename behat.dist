@@ -1,0 +1,55 @@
+default:
+    extensions:
+        Behat\MinkExtension:
+            base_url:  'http://desktop.com/magento/one/latest/index.php/'
+            default_session: selenium_chrome_session
+            goutte: ~
+            sessions:
+              selenium_firefox_session:
+               selenium2:
+                browser: firefox
+              selenium_chrome_nexus5_session:
+               selenium2:
+                browser: chrome
+                capabilities:
+                  # see https://sites.google.com/a/chromium.org/chromedriver/mobile-emulation
+                  extra_capabilities: { "chromeOptions": {"args": ["--start-maximized", "--test-type"], "mobileEmulation": { "deviceName": "Google Nexus 5" } } }
+              selenium_chrome_nexus10_session:
+               selenium2:
+                browser: chrome
+                capabilities:
+                  # see https://sites.google.com/a/chromium.org/chromedriver/mobile-emulation
+                  extra_capabilities: { "chromeOptions": {"args": ["--start-maximized", "--test-type"], "mobileEmulation": { "deviceName": "Google Nexus 10" } } }
+              selenium_chrome_session:
+               selenium2:
+                browser: chrome
+                capabilities:
+                  extra_capabilities: { "chromeOptions": { "args": ["--start-maximized", "--test-type"] } }
+
+              goutte_session:
+                goutte:
+                  guzzle_parameters:
+                    ssl.certificate_authority: false
+    suites:
+        behat-framework:
+            contexts:
+                - FeatureContext
+chrome:
+  extensions:
+    Behat\MinkExtension:
+      default_session: selenium_chrome_session
+
+chrome_nexus5:
+  extensions:
+    Behat\MinkExtension:
+      default_session: selenium_chrome_nexus5_session
+
+chrome_nexus10:
+  extensions:
+    Behat\MinkExtension:
+      default_session: selenium_chrome_nexus10_session
+
+firefox:
+  extensions:
+    Behat\MinkExtension:
+      default_session: selenium_firefox_session
