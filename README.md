@@ -44,7 +44,7 @@ You can then add your features and custom contexts as needed.
 There are a number of packages available that compliment the framework with more features
 
 #####Extra Contexts
-            https://github.com/edmondscommerce/behat-chrome-performance-context
-            https://github.com/edmondscommerce/behat-error-handling-context
-            https://github.com/edmondscommerce/behat-error-detection-context
-            https://github.com/edmondscommerce/behat-faker-context
+[https://github.com/edmondscommerce/behat-chrome-performance-context](https://github.com/edmondscommerce/behat-chrome-performance-context)
+[https://github.com/edmondscommerce/behat-error-handling-context](https://github.com/edmondscommerce/behat-error-handling-context)
+[https://github.com/edmondscommerce/behat-error-detection-context](https://github.com/edmondscommerce/behat-error-detection-context)
+[https://github.com/edmondscommerce/behat-faker-context](https://github.com/edmondscommerce/behat-faker-context)
