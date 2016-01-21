@@ -34,6 +34,12 @@ default:
         behat-framework:
             contexts:
                 - FeatureContext
+                - EdmondsCommerce\BehatChromePerformance\ChromePerformanceContext
+                - EdmondsCommerce\BehatErrorDetection\ErrorDetectionContext
+                - EdmondsCommerce\BehatErrorHandling\ErrorHandlingContext
+                - EdmondsCommerce\BehatFakerContext\FakerContext
+                - EdmondsCommerce\BehatHtmlContext\HTMLContext
+                - EdmondsCommerce\BehatJavascriptContext\JavascriptEventsContext
 chrome:
   extensions:
     Behat\MinkExtension:
