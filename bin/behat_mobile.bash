@@ -65,9 +65,9 @@ Running Behat Scenarios on Mobile
 
 if [[ "" == "$@" ]]
 then
-    ./bin/behat   --format pretty --out std -p chrome_nexus5 --tags=mobile
+    ./bin/behat --config ./behat.yaml  --format pretty --out std -p chrome_nexus5 --tags=mobile
 else
-    ./bin/behat   --format pretty --out std -p chrome_nexus5 --tags=mobile "$@"
+    ./bin/behat --config ./behat.yaml  --format pretty --out std -p chrome_nexus5 --tags=mobile "$@"
 fi
 echo "
 

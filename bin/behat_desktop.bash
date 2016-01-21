@@ -44,9 +44,9 @@ Running Behat Scenarios on Desktop
 
 if [[ "" == "$@" ]]
 then
-    ./bin/behat  --format pretty --out std  -p chrome --tags=desktop
+    ./bin/behat --config ./behat.yaml  --format pretty --out std  -p chrome --tags=desktop
 else
-    ./bin/behat  --format pretty --out std  -p chrome --tags=desktop "$@"
+    ./bin/behat --config ./behat.yaml --format pretty --out std  -p chrome --tags=desktop "$@"
 
 fi
 echo "
