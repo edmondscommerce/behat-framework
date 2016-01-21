@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-cd $DIR
+cd $DIR/../
 echo "
 
 Running Behat Scenarios on Tablet
@@ -47,9 +47,9 @@ II???+7I?????            7I?I?................................II?IIII.,:~~::,,..
 
 if [[ "" == "$@" ]]
 then
-  ./behat  --format pretty --out std --format junit --out behat_results/tablet/$(hostname) -p chrome_nexus10 --tags=tablet
+  ./bin/behat  --format pretty --out std -p chrome_nexus10 --tags=tablet
 else
-  ./behat  --format pretty --out std -p chrome_nexus10 --tags=tablet "$@"
+  ./bin/behat  --format pretty --out std -p chrome_nexus10 --tags=tablet "$@"
 fi
 echo "
 

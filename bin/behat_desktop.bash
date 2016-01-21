@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-cd $DIR
+cd $DIR/../
 echo "
 
 Running Behat Scenarios on Desktop
@@ -44,7 +44,7 @@ Running Behat Scenarios on Desktop
 
 if [[ "" == "$@" ]]
 then
-    ./behat  --format pretty --out std --format junit --out behat_results/desktop/$(hostname) -p chrome --tags=desktop
+    ./bin/behat  --format pretty --out std  -p chrome --tags=desktop
 else
     ./behat  --format pretty --out std  -p chrome --tags=desktop "$@"
 
