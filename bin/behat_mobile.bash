@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-cd $DIR
+cd $DIR/../
 
 echo "
 
@@ -65,9 +65,9 @@ Running Behat Scenarios on Mobile
 
 if [[ "" == "$@" ]]
 then
-    ./behat   --format pretty --out std --format junit --out behat_results/mobile/$(hostname) -p chrome_nexus5 --tags=mobile
+    ./bin/behat   --format pretty --out std --format junit --out behat_results/mobile/$(hostname) -p chrome_nexus5 --tags=mobile
 else
-    ./behat   --format pretty --out std -p chrome_nexus5 --tags=mobile "$@"
+    ./bin/behat   --format pretty --out std -p chrome_nexus5 --tags=mobile "$@"
 fi
 echo "
 
