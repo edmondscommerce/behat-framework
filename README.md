@@ -3,19 +3,21 @@
 
 An easy to get up and running Behat 3 testing framework that includes chrome based mobile and tablet testing
 
-### Installation (Composer)
+### Step One - Create or Update your Composer Dependencies
 
 ####Template composer.json (copy paste)
+For a brand new testing project, simply create a composer.json file and paste in the following:
+
     {
         "require": {
-            "edmondscommerce/behat-framework": "~1.1",
-            "edmondscommerce/behat-faker-context": "~1.1",
-            "edmondscommerce/behat-chrome-performance-context": "~1.1",
-            "edmondscommerce/behat-error-detection-context": "~1.1",
-            "edmondscommerce/behat-error-handling-context": "~1.1"
-            "edmondscommerce/behat-error-magento-one-context": "~1.1"
-            "edmondscommerce/behat-error-html-context": "~1.1"
-            "edmondscommerce/behat-error-javascript-context": "~1.1"
+            "edmondscommerce/behat-framework": "dev-master",
+            "edmondscommerce/behat-faker-context": "dev-master",
+            "edmondscommerce/behat-chrome-performance-context": "dev-master",
+            "edmondscommerce/behat-error-detection-context": "dev-master",
+            "edmondscommerce/behat-error-handling-context": "dev-master",
+            "edmondscommerce/behat-error-magento-one-context": "dev-master",
+            "edmondscommerce/behat-error-html-context": "dev-master",
+            "edmondscommerce/behat-error-javascript-context": "dev-master"
         },
         "config": {
             "bin-dir": "bin/"
@@ -23,7 +25,7 @@ An easy to get up and running Behat 3 testing framework that includes chrome bas
     }
 
 
-####Manual Composer
+####Or to add to an existing Project
 Set the bin dir in your composer.json
     
     "config": {
@@ -32,25 +34,40 @@ Set the bin dir in your composer.json
 
 Add the dependency to your composer.json
 
-    "edmondscommerce/behat-framework": "~1.1"
+    "edmondscommerce/behat-framework": "dev-master"
     
 Or
 
-    composer require edmondscommerce/behat-framework ~1.1
+    composer require edmondscommerce/behat-framework dev-master
 
-Then copy features directory:
+### Step Two - Copy Behat Config Files
 
+####Features
 `cp -R vendor/edmondscommerce/behat-framework/features .`
 
 You can then add your features and custom contexts as needed.
 
+####Behat Config
+`cp vendor/edmondscommerce/behat-framework/behat.dist ./behat.yml`
+
+You will want to edit this file according to your requirements, but this is a good staritng point.
+
+
 There are a number of packages available that compliment the framework with more features
 
-#####Extra Contexts
-            https://github.com/edmondscommerce/behat-chrome-performance-context
-            https://github.com/edmondscommerce/behat-error-handling-context
-            https://github.com/edmondscommerce/behat-error-detection-context
-            https://github.com/edmondscommerce/behat-faker-context
-            https://github.com/edmondscommerce/behat-magento-one-context
-            https://github.com/edmondscommerce/behat-html-context
-            https://github.com/edmondscommerce/behat-javascript-context
+#####Generic Contexts
+[https://github.com/edmondscommerce/behat-chrome-performance-context]
+
+[https://github.com/edmondscommerce/behat-error-handling-context]
+
+[https://github.com/edmondscommerce/behat-error-detection-context]
+
+[https://github.com/edmondscommerce/behat-faker-context]
+
+[https://github.com/edmondscommerce/behat-html-context]
+
+[https://github.com/edmondscommerce/behat-javascript-context]
+
+####Platform Contexts
+
+[https://github.com/edmondscommerce/behat-magento-one-context]
