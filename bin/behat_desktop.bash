@@ -46,7 +46,7 @@ if [[ "" == "$@" ]]
 then
     ./bin/behat  --format pretty --out std  -p chrome --tags=desktop
 else
-    ./behat  --format pretty --out std  -p chrome --tags=desktop "$@"
+    ./bin/behat  --format pretty --out std  -p chrome --tags=desktop "$@"
 
 fi
 echo "
