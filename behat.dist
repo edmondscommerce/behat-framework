@@ -36,6 +36,7 @@ default:
                 - FeatureContext
                 - EdmondsCommerce\BehatChromePerformance\ChromePerformanceContext
                 - EdmondsCommerce\BehatErrorDetection\ErrorDetectionContext
+                - EdmondsCommerce\BehatErrorDetection\W3CValidationContext
                 - EdmondsCommerce\BehatErrorHandling\ErrorHandlingContext
                 - EdmondsCommerce\BehatFakerContext\FakerContext
                 - EdmondsCommerce\BehatHtmlContext\HTMLContext
