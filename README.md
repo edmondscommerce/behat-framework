@@ -13,6 +13,9 @@ An easy to get up and running Behat 3 testing framework that includes chrome bas
             "edmondscommerce/behat-chrome-performance-context": "~1.1",
             "edmondscommerce/behat-error-detection-context": "~1.1",
             "edmondscommerce/behat-error-handling-context": "~1.1"
+            "edmondscommerce/behat-error-magento-one-context": "~1.1"
+            "edmondscommerce/behat-error-html-context": "~1.1"
+            "edmondscommerce/behat-error-javascript-context": "~1.1"
         },
         "config": {
             "bin-dir": "bin/"
@@ -48,3 +51,6 @@ There are a number of packages available that compliment the framework with more
             https://github.com/edmondscommerce/behat-error-handling-context
             https://github.com/edmondscommerce/behat-error-detection-context
             https://github.com/edmondscommerce/behat-faker-context
+            https://github.com/edmondscommerce/behat-magento-one-context
+            https://github.com/edmondscommerce/behat-html-context
+            https://github.com/edmondscommerce/behat-javascript-context
