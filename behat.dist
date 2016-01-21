@@ -1,7 +1,7 @@
 default:
     extensions:
         Behat\MinkExtension:
-            base_url:  'http://desktop.com/magento/one/latest/index.php/'
+            base_url:  '######### REPLACE WITH BASE URL ##########'
             default_session: selenium_chrome_session
             goutte: ~
             sessions:
