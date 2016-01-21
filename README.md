@@ -52,8 +52,11 @@ You can then add your features and custom contexts as needed.
 
 You will want to edit this file according to your requirements, but this is a good staritng point.
 
+### Step Three - Add Other Contexts
 
-There are a number of packages available that compliment the framework with more features
+There are a number of packages available that compliment the framework with more features.
+
+We have created some to get you started:
 
 #####Generic Contexts
 [https://github.com/edmondscommerce/behat-chrome-performance-context]
