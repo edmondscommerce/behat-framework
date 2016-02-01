@@ -22,7 +22,10 @@ For a brand new testing project, simply create a composer.json file and paste in
             "bin-dir": "bin/"
         }
     }
+    
+Then install the dependencies.
 
+    composer install --prefer-source
 
 ####Or to add to an existing Project
 Set the bin dir in your composer.json
@@ -31,13 +34,9 @@ Set the bin dir in your composer.json
         "bin-dir": "bin/"
     }
 
-Add the dependency to your composer.json
+And then run this to add to your composer.json and install
 
-    "edmondscommerce/behat-framework": "dev-master"
-    
-Or
-
-    composer require edmondscommerce/behat-framework dev-master
+    composer require edmondscommerce/behat-framework dev-master --prefer-source
 
 ### Step Two - Copy Behat Config Files
 
