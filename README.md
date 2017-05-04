@@ -1,11 +1,11 @@
-#Behat Framework - A Behat 3 Quickstart
+# Behat Framework - A Behat 3 Quickstart
 ## By [Edmonds Commerce](https://www.edmondscommerce.co.uk)
 
 An easy to get up and running Behat 3 testing framework that includes chrome based mobile and tablet testing
 
 ### Step One - Create or Update your Composer Dependencies
 
-####Template composer.json (copy paste)
+#### Template composer.json (copy paste)
 For a brand new testing project, simply create a composer.json file and paste in the following:
 
     {
@@ -29,7 +29,7 @@ Then install the dependencies.
 
     composer install --prefer-source
 
-####Or to add to an existing Project
+#### Or to add to an existing Project
 Set the bin dir in your composer.json
     
     "config": {
@@ -42,12 +42,12 @@ And then run this to add to your composer.json and install
 
 ### Step Two - Copy Behat Config Files
 
-####Features
+#### Features
 `cp -R vendor/edmondscommerce/behat-framework/features .`
 
 You can then add your features and custom contexts as needed.
 
-####Behat Config
+#### Behat Config
 `cp vendor/edmondscommerce/behat-framework/behat.dist ./behat.yml`
 
 You will want to edit this file according to your requirements, but this is a good staritng point.
@@ -58,7 +58,7 @@ There are a number of packages available that compliment the framework with more
 
 We have created some to get you started:
 
-#####Generic Contexts
+##### Generic Contexts
 [https://github.com/edmondscommerce/behat-chrome-performance-context]
 
 [https://github.com/edmondscommerce/behat-error-handling-context]
@@ -75,7 +75,7 @@ We have created some to get you started:
 
 [https://github.com/edmondscommerce/behat-screenshot-context
 
-####Platform Contexts
+#### Platform Contexts
 
 [https://github.com/edmondscommerce/behat-magento-one-context]
 
