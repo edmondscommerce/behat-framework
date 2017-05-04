@@ -41,6 +41,8 @@ default:
                 - EdmondsCommerce\BehatFakerContext\FakerContext
                 - EdmondsCommerce\BehatHtmlContext\HTMLContext
                 - EdmondsCommerce\BehatJavascriptContext\JavascriptEventsContext
+                - EdmondsCommerce\BehatMouseContext\MouseContext
+                - EdmondsCommerce\BehatScreenshotContext\ScreenshotContext
 chrome:
   extensions:
     Behat\MinkExtension:
