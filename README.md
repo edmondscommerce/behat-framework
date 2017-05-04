@@ -18,6 +18,7 @@ For a brand new testing project, simply create a composer.json file and paste in
             "edmondscommerce/behat-error-handling-context": "dev-master",
             "edmondscommerce/behat-html-context": "dev-master",
             "edmondscommerce/behat-javascript-context": "dev-master"
+            "edmondscommerce/behat-mouse-context": "dev-master"
         },
         "config": {
             "bin-dir": "bin/"
@@ -70,6 +71,14 @@ We have created some to get you started:
 
 [https://github.com/edmondscommerce/behat-javascript-context]
 
+[https://github.com/edmondscommerce/behat-mouse-context]
+
+[https://github.com/edmondscommerce/behat-screenshot-context
+
 ####Platform Contexts
 
 [https://github.com/edmondscommerce/behat-magento-one-context]
+
+[https://github.com/edmondscommerce/behat-magento-2-context]
+
+[https://github.com/edmondscommerce/behat-prestashop-context]
