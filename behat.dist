@@ -25,7 +25,11 @@ default:
                 browser: chrome
                 capabilities:
                   extra_capabilities: { "chromeOptions": { "args": ["--start-maximized", "--test-type"] } }
-
+              selenium_chrome_session_headless:
+               selenium2:
+                browser: chrome
+                capabilities:
+                  extra_capabilities: { "chromeOptions": { "args": ["--disable-gpu", "--window-size=1920,1080", "--headless", "--ignore-certificate-errors", "--test-type"], perfLoggingPrefs: { 'traceCategories': 'blink.console,disabled-by-default-devtools.timeline' } }, "loggingPrefs": { "performance": "ALL" } }
               goutte_session:
                 goutte:
                   guzzle_parameters:
@@ -47,6 +51,11 @@ chrome:
   extensions:
     Behat\MinkExtension:
       default_session: selenium_chrome_session
+
+headless:
+  extensions:
+    Behat\MinkExtension:
+      default_session: selenium_chrome_session_headless
 
 chrome_nexus5:
   extensions:
