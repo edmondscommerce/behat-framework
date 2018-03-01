@@ -48,7 +48,7 @@ And then run this to add to your composer.json and install
 You can then add your features and custom contexts as needed.
 
 #### Behat Config
-`cp vendor/edmondscommerce/behat-framework/behat.dist ./behat.yml`
+`cp vendor/edmondscommerce/behat-framework/behat.dist ./behat.yaml`
 
 You will want to edit this file according to your requirements, but this is a good staritng point.
 
