@@ -16,7 +16,7 @@ For a brand new testing project, simply create a composer.json file and paste in
             "edmondscommerce/behat-error-detection-context": "dev-master",
             "edmondscommerce/behat-screenshot-context": "dev-master",
             "edmondscommerce/behat-error-handling-context": "dev-master",
-            "edmondscommerce/behat-html-context": "dev-master",
+            "edmondscommerce/behat-html-context": "0.0.1",
             "edmondscommerce/behat-javascript-context": "dev-master",
             "edmondscommerce/behat-mouse-context": "dev-master"
         },
